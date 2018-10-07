@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.planning.college.collegeplanning.MainActivit"
+    >
+    <!--静态方式加载顶部导航栏-->
+<!--顶部caidan栏：菜单，查找-->
+    <fragment
+        android:id="@+id/nav_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:name="com.planning.college.fragment.elicitation.NavElicitationFragment_"
+        >
+    </fragment>
+
+    <!--正文-->
+    <LinearLayout
+        android:id="@+id/e_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/nav_top"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+<!--静态方式加载底部导航栏-->
+    <!--底部导航栏：启发，思考，知识-->
+        <fragment
+            android:id="@+id/nav_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:name="com.planning.college.fragment.NavBottomFragment_"
+            />
+
+        <!--<include layout="@layout/nav_buttom"/>-->
+
+</RelativeLayout>

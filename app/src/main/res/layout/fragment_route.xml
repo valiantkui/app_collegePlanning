@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    >
+    <!--当前是推荐路线的布局页面-->
+    <HorizontalScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:scrollbars="none"
+        android:background="@color/nav_color"
+        >
+        <RadioGroup
+
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:textColor="@color/fond_color"
+                android:id="@+id/subject"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:button="@null"
+                android:textSize="12sp"
+                android:text="学科" />
+            <RadioButton
+                android:textColor="@color/fond_color"
+                android:id="@+id/master"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:button="@null"
+                android:text="考研" />
+            <RadioButton
+                android:textColor="@color/fond_color"
+                android:id="@+id/job"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:button="@null"
+                android:text="就业" />
+            <RadioButton
+                android:textColor="@color/fond_color"
+                android:id="@+id/college"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:button="@null"
+                android:text="大学" />
+            <RadioButton
+                android:textColor="@color/fond_color"
+                android:id="@+id/foreign"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:button="@null"
+                android:text="出国" />
+        </RadioGroup>
+
+    </HorizontalScrollView>
+
+
+
+    <!--动态添加fragment-->
+    <LinearLayout
+        android:id="@+id/route_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/recommend"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+</LinearLayout>

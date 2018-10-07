@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.planning.college.collegeplanning.MainActivit"
+    android:orientation="vertical"
+    >
+    <!--顶部caidan栏：菜单，查找-->
+    <LinearLayout
+        android:id="@+id/nav_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true">
+        <include layout="@layout/nav_knowledge"/>
+    </LinearLayout>
+
+    <!--正文-->
+
+
+
+
+
+    <LinearLayout
+
+        android:id="@+id/first"
+        android:layout_below="@id/nav_top"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/k1"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="编程语言"
+            android:textSize="16sp"
+            android:drawableTop="@mipmap/youji"
+            android:drawablePadding="10dp"
+            />
+        <TextView
+            android:id="@+id/k2"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="导论"
+            android:textSize="16sp"
+            android:drawableTop="@mipmap/ziyouanpai"
+            android:drawablePadding="10dp"
+            />
+        <TextView
+            android:id="@+id/k3"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="专业目录"
+            android:textSize="16sp"
+            android:drawableTop="@mipmap/jinnang"
+            android:drawablePadding="10dp"
+            />
+    </LinearLayout>
+ <LinearLayout
+     android:id="@+id/second"
+        android:layout_below="@id/first"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/k4"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="保研"
+            android:textSize="16sp"
+            android:drawableTop="@mipmap/fuzhi"
+            android:drawablePadding="10dp"
+            />
+        <TextView
+            android:id="@+id/k5"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="核心课程"
+            android:textSize="16sp"
+            android:drawableTop="@mipmap/xingcheng"
+            android:drawablePadding="10dp"
+            />
+        <TextView
+            android:id="@+id/k6"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="编程入门"
+            android:textSize="16sp"
+            android:drawableTop="@mipmap/list_view"
+            android:drawablePadding="10dp"
+            />
+    </LinearLayout>
+ <LinearLayout
+        android:id="@+id/third"
+        android:layout_below="@id/second"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/k7"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="大学生活"
+            android:textSize="16sp"
+            android:drawableTop="@mipmap/safari"
+            android:drawablePadding="10dp"
+            />
+        <TextView
+            android:id="@+id/k8"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="出国留学"
+            android:textSize="16sp"
+            android:drawableTop="@mipmap/haitan"
+            android:drawablePadding="10dp"
+            />
+        <TextView
+            android:id="@+id/k9"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="科技创新"
+            android:textSize="16sp"
+            android:drawableTop="@mipmap/zhinengyouhua"
+            android:drawablePadding="10dp"
+            />
+    </LinearLayout>
+
+
+
+
+    <!--底部导航栏：启发，思考，知识-->
+    <fragment
+        android:id="@+id/nav_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:name="com.planning.college.fragment.NavBottomFragment_"
+        />
+
+
+</RelativeLayout>

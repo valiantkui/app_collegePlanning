@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.planning.college.collegeplanning">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="计科觅知"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Light.NoTitleBar"
+        >
+
+        <activity android:name=".SearchActivity_"/>
+        <activity android:name=".usermanager.RegisterActivity_">
+
+
+        </activity>
+
+        <activity android:name=".usermanager.LoginActivity_"/>
+        <activity android:name=".Elicitation_"
+            android:label="计科觅知">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".elicitation.selfArticle.CloudArticleInfoActivity_"/>
+        <activity android:name=".Think"
+            android:label="思考"
+            />
+        <activity android:name=".Knowledge_"
+            android:label="知识"/>
+        <activity android:name="com.planning.college.collegeplanning.elicitation.SelfArticle"
+            android:label="心得体会"/>
+        <activity android:name=".elicitation.selfArticle.EditArticalActivity_"/>
+
+        <activity android:name=".usermanager.UserManagerActivity_"/>
+        <activity android:name=".elicitation.selfArticle.ArticalInfoActivity_"/>
+        <activity android:name=".elicitation.route.ProfessionActivity_"/>
+        <activity android:name=".elicitation.route.SubjectInfoActivity_"/>
+        <activity android:name=".elicitation.route.DirectionActivity_"/>
+        <activity android:name=".elicitation.route.DirectionInfoActivity_"/>
+        <activity android:name=".elicitation.route.ResourceActivity_"/>
+        <activity android:name=".elicitation.route.ResourceInfoActivity_"/>
+        <activity android:name=".elicitation.selfArticle.UpdateArticleActivity_"/>
+        <activity android:name=".knowledge.Knowledge1Activity_"/>
+        <activity android:name=".knowledge.Knowledge2Activity_"/>
+        <activity android:name=".knowledge.Knowledge3Activity_"/>
+        <activity android:name=".knowledge.Knowledge4Activity_"/>
+        <activity android:name=".knowledge.Knowledge5Activity_"/>
+        <activity android:name=".knowledge.Knowledge6Activity_"/>
+        <activity android:name=".knowledge.Knowledge7Activity_"/>
+        <activity android:name=".knowledge.Knowledge8Activity_"/>
+        <activity android:name=".knowledge.Knowledge9Activity_"/>
+
+        <activity android:name=".guihua.Add_Jihua"/>
+        <activity android:name=".guihua.Add_Zijihua"/>
+        <activity android:name=".guihua.Zi_mubiao"/>
+
+        <activity android:name="com.planning.college.fragment.elicitation.PreviewArticleActivity_"/>
+
+
+        <service android:name="com.planning.college.service.ArticleService"/>
+
+    </application>
+
+</manifest>

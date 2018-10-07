@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    >
+
+   <!-- &lt;!&ndash;返回顶部栏&ndash;&gt;
+    <LinearLayout
+        android:id="@+id/nav_article"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_weight="1"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:gravity="center|center_vertical"
+            android:src="@mipmap/back"
+            />
+        <TextView
+            android:id="@+id/label"
+            android:layout_weight="4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center |center_vertical"
+            android:text="方向"
+            />
+        <TextView
+            android:id="@+id/save"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=""/>
+    </LinearLayout>
+-->
+
+    <include  layout="@layout/nav_back"/>
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+</LinearLayout>

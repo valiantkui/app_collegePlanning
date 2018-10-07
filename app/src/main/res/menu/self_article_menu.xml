@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item android:id="@+id/create_article" android:title="新建笔记"/>
+    <item android:id="@+id/create_diary" android:title="新建日记"/>
+    <item android:id="@+id/cloud_article" android:title="云端笔记"/>
+    <item android:id="@+id/local_article" android:title="本地笔记"/>
+
+
+
+
+</menu>

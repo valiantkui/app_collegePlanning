@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+
+    <!--默认不显示，但保存着专业的编号，方便以后使用-->
+    <TextView
+        android:id="@+id/p_no"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:text="hh"
+        />
+    <TextView
+        android:id="@+id/p_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="计算机"
+        android:textSize="16sp"
+        android:drawableTop="@mipmap/professtion_icon"
+        android:drawablePadding="10dp"
+        />
+
+</LinearLayout>

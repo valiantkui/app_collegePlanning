@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    android:gravity="center"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:id="@+id/elicitation"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+
+            android:layout_marginTop="4dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/qifa"
+            android:layout_weight="3"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="启发"
+            android:textColor="#666666"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/think"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/guihua"
+            android:layout_weight="3"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="规划"
+            android:textColor="#666666"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/knowledge"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_marginTop="4dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/zhishi"
+            android:layout_weight="3"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="知识"
+            android:textColor="#666666"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
